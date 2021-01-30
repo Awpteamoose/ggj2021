@@ -18,7 +18,12 @@ pub use smart_default::SmartDefault;
 pub use bevy::prelude::*;
 pub use bevy_discovery::system;
 pub use bevy_inspector_egui::Inspectable;
+pub use crate::{components as cmp, systems as sys, resources as res};
+pub use bevy::math::{Vec2Swizzles, Vec3Swizzles, Vec4Swizzles};
+pub use shrinkwraprs::Shrinkwrap;
+pub use bevy::math::*;
 
+#[must_use]
 pub fn default<T: Default>() -> T { T::default() }
 
 // #[extend::ext(pub)]
@@ -74,4 +79,11 @@ macro_rules! custom_try {
 			($test: expr) => { if $test { return $default; }; }
 		}
 	}
+}
+
+pub fn collide(point: Vec2, center: Vec2, size: Vec2) -> bool {
+	let (px, py) = (point.x, point.y);
+	let (cx, cy) = (center.x, center.y);
+	let (w, h) = (size.x * 0.5, size.y * 0.5);
+	px >= cx - w && py >= cy - h && px <= cx + w && py <= cy + h
 }

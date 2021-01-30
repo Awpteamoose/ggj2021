@@ -576,7 +576,7 @@ dependencies = [
  "glam",
  "parking_lot",
  "serde",
- "smallvec",
+ "smallvec 1.6.1",
  "thiserror",
 ]
 
@@ -620,7 +620,7 @@ dependencies = [
  "parking_lot",
  "serde",
  "shaderc",
- "smallvec",
+ "smallvec 1.6.1",
  "spirv-reflect",
  "thiserror",
 ]
@@ -713,7 +713,7 @@ dependencies = [
  "bevy_math",
  "bevy_reflect",
  "bevy_utils",
- "smallvec",
+ "smallvec 1.6.1",
 ]
 
 [[package]]
@@ -853,9 +853,9 @@ checksum = "0d8c1fef690941d3e7788d328517591fecc684c084084702d6ff1641e993699a"
 
 [[package]]
 name = "bumpalo"
-version = "3.5.0"
+version = "3.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f07aa6688c702439a1be0307b6a94dffe1168569e45b9500c1372bc580740d59"
+checksum = "099e596ef14349721d9016f6b80dd3419ea1bf289ab9b44df8e4dfd3a005d5d9"
 
 [[package]]
 name = "bytemuck"
@@ -1364,6 +1364,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "dirmod"
+version = "0.1.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d44a4b001572800efb4089ec9072e7bef4eae45b50f8fa9b42839204fab6e57"
+dependencies = [
+ "dirmod-codegen",
+]
+
+[[package]]
+name = "dirmod-codegen"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6189e78ee8dceff4cf04d5c0dd5aa9dba4fcbe3edbd675e063d1be6b7c92fe9"
+dependencies = [
+ "proc-macro2 1.0.24",
+ "quote 1.0.8",
+ "smallvec 0.6.14",
+ "syn 1.0.60",
+]
+
+[[package]]
 name = "discard"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1752,7 +1773,7 @@ dependencies = [
  "parking_lot",
  "range-alloc",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "spirv_cross",
  "thunderdome",
  "winapi 0.3.9",
@@ -1774,7 +1795,7 @@ dependencies = [
  "log",
  "range-alloc",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "spirv_cross",
  "winapi 0.3.9",
 ]
@@ -1811,7 +1832,7 @@ dependencies = [
  "parking_lot",
  "range-alloc",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "spirv_cross",
  "storage-map",
 ]
@@ -1832,7 +1853,7 @@ dependencies = [
  "log",
  "objc",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "winapi 0.3.9",
  "x11",
 ]
@@ -1884,6 +1905,7 @@ dependencies = [
  "clone-block",
  "derive_less",
  "derive_more",
+ "dirmod",
  "extend",
  "itertools 0.10.0",
  "once_cell",
@@ -2798,7 +2820,7 @@ dependencies = [
  "instant",
  "libc",
  "redox_syscall 0.1.57",
- "smallvec",
+ "smallvec 1.6.1",
  "winapi 0.3.9",
 ]
 
@@ -3341,6 +3363,15 @@ dependencies = [
 
 [[package]]
 name = "smallvec"
+version = "0.6.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b97fcaeba89edba30f044a10c6a3cc39df9c3f17d7cd829dd1446cab35f890e0"
+dependencies = [
+ "maybe-uninit",
+]
+
+[[package]]
+name = "smallvec"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e"
@@ -3742,7 +3773,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sharded-slab",
- "smallvec",
+ "smallvec 1.6.1",
  "thread_local",
  "tracing",
  "tracing-core",
@@ -4043,7 +4074,7 @@ dependencies = [
  "objc",
  "parking_lot",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "tracing",
  "typed-arena",
  "wasm-bindgen",
@@ -4074,7 +4105,7 @@ dependencies = [
  "naga",
  "parking_lot",
  "raw-window-handle",
- "smallvec",
+ "smallvec 1.6.1",
  "thiserror",
  "tracing",
  "wgpu-types",

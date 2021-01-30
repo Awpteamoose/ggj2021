@@ -12,6 +12,7 @@ chrono = { version = "0.4", features = ["serde"] }
 clone-block = "0.1"
 derive_less = "0.2"
 derive_more = "0.99"
+dirmod = "0.1"
 extend = "0.3"
 itertools = "0.10"
 once_cell = "1"
