@@ -26,6 +26,9 @@
 	clippy::doc_markdown,
 	clippy::needless_pass_by_value,
 	clippy::similar_names,
+	clippy::shadow_unrelated,
+	clippy::clippy::too_many_arguments,
+	clippy::must_use_candidate,
 	dead_code
 )]
 #![feature(try_blocks, async_closure, iterator_fold_self, fn_traits, unboxed_closures)]
@@ -53,8 +56,10 @@ fn main() {
 		// .add_plugin(PrintDiagnosticsPlugin::default())
 		// .add_plugin(FrameTimeDiagnosticsPlugin::default())
 		// .add_system(PrintDiagnosticsPlugin::print_diagnostics_system.system())
-		.add_plugin(bevy_inspector_egui::InspectorPlugin::<systems::debug::Tweak>::new())
+		// .add_plugin(bevy_inspector_egui::InspectorPlugin::<systems::debug::Tweak>::new())
 		.add_plugin(DiscoveryPlugin)
 		.add_resource(res::CursorPos::default())
+		.add_resource(res::SelectedDrawer::default())
+		.add_resource(res::SelectedItem::default())
 		.run();
 }

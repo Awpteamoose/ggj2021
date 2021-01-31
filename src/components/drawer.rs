@@ -1,10 +1,10 @@
 use crate::prelude::*;
 
-#[derive(Default)]
+#[derive(Clone)]
 pub struct Drawer {
-	pub material: Handle<ColorMaterial>,
 	pub size: (u8, u8),
 	pub items: HashMap<(u8, u8), Entity>,
+	pub root: Entity,
 }
 
 impl Drawer {
