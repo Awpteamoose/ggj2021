@@ -19,9 +19,9 @@ pub fn debug(
 	// materials: Res<res::Materials>,
 	// btns: Res<Input<MouseButton>>,
 ) {
-	for mut text in query.iter_mut() {
-		text.value = time.delta_seconds().to_string();
-	}
+	// for mut text in query.iter_mut() {
+	//     text.value = time.delta_seconds().to_string();
+	// }
 
 	// if tweak.tweak {
 	//     let mut one_clicked = false;

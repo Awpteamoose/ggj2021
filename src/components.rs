@@ -10,8 +10,11 @@ pub struct MainCamera;
 #[derive(Reflect)]
 pub struct Name(String);
 
+pub struct RequestText;
+
 pub struct Item {
 	pub size: (u8, u8),
+	pub description: &'static str,
 }
 
 impl Item {

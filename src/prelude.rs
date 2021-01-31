@@ -2,7 +2,7 @@ pub use sugars::*;
 pub use anyhow::Context;
 pub use itertools::Itertools as _;
 pub use once_cell::sync::{Lazy, OnceCell};
-pub use rand::Rng;
+pub use rand::prelude::*;
 pub use serde::{Deserialize, Serialize};
 pub use std::{
 	rc::Rc,

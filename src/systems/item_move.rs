@@ -13,6 +13,7 @@ pub fn system(
 	mut transforms: Query<&mut Transform>,
 	commands: &mut Commands,
 	mut lost_items: ResMut<res::LostItems>,
+	mut item_request: ResMut<res::ItemRequest>,
 ) {
 	if selected_item.0.is_none() && btns.just_pressed(MouseButton::Left) {
 		if let Some(&last_lost_item) = lost_items.1.last() {
@@ -72,10 +73,10 @@ pub fn system(
 				}
 			}
 
-			if collide(*cursor_pos.as_ref(), vec2(0., -0.150625), vec2(0.18, 0.135)) {
-				println!("TRY GIVE");
+			if lost_items.1.is_empty() && item_request.0 == item.description && collide(*cursor_pos.as_ref(), vec2(0., -0.150625), vec2(0.18, 0.135)) {
 				commands.despawn_recursive(selected_item_entity);
 				transferred = true;
+				item_request.1 = true;
 			}
 
 			if !transferred {
