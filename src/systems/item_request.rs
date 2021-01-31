@@ -18,7 +18,7 @@ pub fn system(
 	}
 
 	if descriptions.len() < item_request.2 && lost_items.1.is_empty() {
-		for _ in 0..item_request.2 + thread_rng().gen_range(1..3) {
+		for _ in 0..(2 * item_request.2) + thread_rng().gen_range(1..3) {
 			let new_item = sys::setup::make_item(commands, lost_items.0, item_templates.get_random(), true);
 			lost_items.1.push(new_item);
 		}
@@ -27,7 +27,7 @@ pub fn system(
 	visible.is_visible = lost_items.1.is_empty();
 
 	if item_request.1 {
-		item_request.2 += thread_rng().gen_range(1..4);
+		item_request.2 += thread_rng().gen_range(1..3);
 		item_request.1 = false;
 		item_request.0 = descriptions[thread_rng().gen_range(0..descriptions.len())];
 		text.value = format!("I think I lost \n{}.", item_request.0);

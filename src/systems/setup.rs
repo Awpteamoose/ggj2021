@@ -443,11 +443,11 @@ pub fn system(
 			material: materials.add(asset_server.load("sprites/ring_copper_blue_square.png").into()),
 			description: "a copper ring\nwith a square blue stone"
 		},
-		res::ItemTemplate {
-			size: (1, 1),
-			material: materials.add(asset_server.load("sprites/ring_copper_blue_triangle.png").into()),
-			description: "a copper ring\nwith a triangular blue stone"
-		},
+		// res::ItemTemplate {
+		//     size: (1, 1),
+		//     material: materials.add(asset_server.load("sprites/ring_copper_blue_triangle.png").into()),
+		//     description: "a copper ring\nwith a triangular blue stone"
+		// },
 		res::ItemTemplate {
 			size: (1, 1),
 			material: materials.add(asset_server.load("sprites/ring_copper_green_round.png").into()),
@@ -473,11 +473,11 @@ pub fn system(
 			material: materials.add(asset_server.load("sprites/ring_copper_pink_square.png").into()),
 			description: "a copper ring\nwith a square pink stone"
 		},
-		res::ItemTemplate {
-			size: (1, 1),
-			material: materials.add(asset_server.load("sprites/ring_copper_pink_triangle.png").into()),
-			description: "a copper ring\nwith a triangular pink stone"
-		},
+		// res::ItemTemplate {
+		//     size: (1, 1),
+		//     material: materials.add(asset_server.load("sprites/ring_copper_pink_triangle.png").into()),
+		//     description: "a copper ring\nwith a triangular pink stone"
+		// },
 		res::ItemTemplate {
 			size: (1, 1),
 			material: materials.add(asset_server.load("sprites/ring_golden.png").into()),
@@ -523,11 +523,11 @@ pub fn system(
 			material: materials.add(asset_server.load("sprites/ring_golden_pink_square.png").into()),
 			description: "a golden ring\nwith a square pink stone"
 		},
-		res::ItemTemplate {
-			size: (1, 1),
-			material: materials.add(asset_server.load("sprites/ring_golden_pink_triangle.png").into()),
-			description: "a golden ring\nwith a triangular pink stone"
-		},
+		// res::ItemTemplate {
+		//     size: (1, 1),
+		//     material: materials.add(asset_server.load("sprites/ring_golden_pink_triangle.png").into()),
+		//     description: "a golden ring\nwith a triangular pink stone"
+		// },
 		res::ItemTemplate {
 			size: (1, 1),
 			material: materials.add(asset_server.load("sprites/ring_silver.png").into()),
@@ -548,11 +548,11 @@ pub fn system(
 			material: materials.add(asset_server.load("sprites/ring_silver_blue_triangle.png").into()),
 			description: "a silver ring\nwith a triangular blue stone"
 		},
-		res::ItemTemplate {
-			size: (1, 1),
-			material: materials.add(asset_server.load("sprites/ring_silver_green_round.png").into()),
-			description: "a silver ring\nwith a round green stone"
-		},
+		// res::ItemTemplate {
+		//     size: (1, 1),
+		//     material: materials.add(asset_server.load("sprites/ring_silver_green_round.png").into()),
+		//     description: "a silver ring\nwith a round green stone"
+		// },
 		res::ItemTemplate {
 			size: (1, 1),
 			material: materials.add(asset_server.load("sprites/ring_silver_green_square.png").into()),
@@ -648,11 +648,11 @@ pub fn system(
 			material: materials.add(asset_server.load("sprites/glasses_silver_black.png").into()),
 			description: "dark-tinted glasses\nin a silver frame"
 		},
-		res::ItemTemplate {
-			size: (2, 1),
-			material: materials.add(asset_server.load("sprites/glasses_silver_green.png").into()),
-			description: "green-tinted glasses\nin a silver frame"
-		},
+		// res::ItemTemplate {
+		//     size: (2, 1),
+		//     material: materials.add(asset_server.load("sprites/glasses_silver_green.png").into()),
+		//     description: "green-tinted glasses\nin a silver frame"
+		// },
 		res::ItemTemplate {
 			size: (2, 1),
 			material: materials.add(asset_server.load("sprites/glasses_silver_blue.png").into()),
@@ -662,6 +662,86 @@ pub fn system(
 			size: (2, 1),
 			material: materials.add(asset_server.load("sprites/glasses_silver_pink.png").into()),
 			description: "pink-tinted glasses\nin a silver frame"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_pink.png").into()),
+			description: "a pink umbrella"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_green.png").into()),
+			description: "a green umbrella"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_blue.png").into()),
+			description: "a blue umbrella"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_white.png").into()),
+			description: "a white umbrella"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_black.png").into()),
+			description: "a black umbrella"
+		},
+		res::ItemTemplate {
+			size: (3, 1),
+			material: materials.add(asset_server.load("sprites/umbrella_yellow.png").into()),
+			description: "a yellow umbrella"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_bg.png").into()),
+			description: "a blue hat\nwith a green band"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_bp.png").into()),
+			description: "a blue hat\nwith a pink band"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_by.png").into()),
+			description: "a blue hat\nwith a yellow band"
+		},
+		// res::ItemTemplate {
+		//     size: (2, 2),
+		//     material: materials.add(asset_server.load("sprites/hat_gb.png").into()),
+		//     description: "a green hat\nwith a blue band"
+		// },
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_gy.png").into()),
+			description: "a green hat\nwith a yellow band"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_pb.png").into()),
+			description: "a pink hat\nwith a blue band"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_py.png").into()),
+			description: "a pink hat\nwith a yellow band"
+		},
+		// res::ItemTemplate {
+		//     size: (2, 2),
+		//     material: materials.add(asset_server.load("sprites/hat_yb.png").into()),
+		//     description: "a yellow hat\nwith a blue band"
+		// },
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_yg.png").into()),
+			description: "a yellow hat\nwith a green band"
+		},
+		res::ItemTemplate {
+			size: (2, 2),
+			material: materials.add(asset_server.load("sprites/hat_yp.png").into()),
+			description: "a yellow hat\nwith a pink band"
 		},
 	]);
 
